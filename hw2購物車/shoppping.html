@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車物件實作</title>
+    <style>
+        img {
+            max-width: 400px;
+        }
+        
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #sub1 {
+            margin: auto 0;
+            text-align: center;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="shopping_buy.php">
+        <table border="1">
+            <tr>
+                <td>名稱</td>
+                <td>ASUS VA27EHE 27型 Full HD超低藍光護眼螢幕</td>
+                <td>MSI微星Vigor GK70 Cherry MX RGB機械電競鍵盤(紅軸版)</td>
+                <td>MSI微星 Immerse GH20 耳罩式電競耳機</td>
+            </tr>
+            <tr>
+                <td>圖片</td>
+                <td>
+                    <a href="https://s.yimg.com/zp/MerchandiseImages/86075F2F40-SP-8711420.jpg"><img src="https://s.yimg.com/zp/MerchandiseImages/86075F2F40-SP-8711420.jpg"></a>
+                </td>
+                <td>
+                    <a href="https://b.ecimg.tw/items/DCAH9IA9008PS49/000001_1603942894.jpg"><img src="https://b.ecimg.tw/items/DCAH9IA9008PS49/000001_1603942894.jpg"></td>
+                <td>
+                    <a href="https://d.ecimg.tw/items/DCAYB1A900B5DR6/000001_1614242951.jpg"><img src="https://d.ecimg.tw/items/DCAYB1A900B5DR6/000001_1614242951.jpg"></td>
+            </tr>
+            <tr>
+                <td>單價</td>
+                <td>3988</td>
+                <td>4699</td>
+                <td>1190</td>
+            </tr>
+            <tr>
+                <td>個數</td>
+                <td><input type="text" name="p1" size="10">個</td>
+                <td><input type="text" name="p2" size="10">個</td>
+                <td><input type="text" name="p3" size="10">個</td>
+            </tr>
+
+        </table>
+        <br>
+        <table border="1">
+            <tr>
+                <td>輸入您的姓名<input type="text" name="D1" size="5"></td>
+                <td>輸入您的電話或手機<input type="text" name="D2" size="10"></td>
+                <td>輸入您的地址<input type="text" name="D3" size="30"></td>
+                <td>輸入您的Email<input type="text" name="D4" size="30"></td>
+
+            </tr>
+            <tr>
+                <td><select size="1" name="s1">
+                    <option>請選擇月份</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    </select> 月
+                </td>
+                <td><select size="1" name="s2">
+                    <option>請選擇日期</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                    </select> 日
+                </td>
+                <td>
+                    <input type="radio" name="c1" value="宅配到府(含運費60元)">宅配到府(含運費60元)
+                    <input type="radio" name="c1" value="超商取貨(含運費60元)">超商取貨(含運費60元)
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="area1" rows="8" cols="50">歡迎在底下填寫任何意見
+                    </textarea>
+
+                </td>
+                <td id="sub1"><input type="submit" name="A1" value="送出"></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>
